@@ -1,0 +1,8 @@
+export { default as About } from './About/About'
+export { default as ChoosePlan } from './ChoosePlan/ChoosePlan'
+export { default as Companies } from './Companies/Companies'
+export { default as Header } from './Header/Header'
+export { default as Introduction } from './Introduction/Intro'
+export { default as MyProcess } from './MyProcess/MyProcess'
+export { default as MyServices } from './MyServices/MyServices'
+export { default as Works } from './Works/Works'
