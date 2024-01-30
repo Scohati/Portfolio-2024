@@ -43,6 +43,7 @@ export const H3Developer = styled.h3 `
 export const H6 = styled.h6 `
     font-size: 24px;
     color: ${({ theme }) => theme === 'light' ? 'rgba(0,0,0, 0.5)' : 'rgba(255,255,255, 0.5)'};
+    max-width: 230px;
 `
 
 export const Button = styled.button `
@@ -68,4 +69,5 @@ export const P = styled.p `
     font-size: 24px;
     text-align: center;
     z-index: 2;
+    max-width: 850px;
 `

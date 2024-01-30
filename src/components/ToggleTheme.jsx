@@ -11,9 +11,6 @@ const ToggleTheme = () => {
         width: 50px;
         height: 50px;
         background-color: rgba(0, 0, 0, 0.6);
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
         border-radius: 50%;
 
         display: flex;

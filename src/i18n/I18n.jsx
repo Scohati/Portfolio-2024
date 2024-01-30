@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next"
 import BrazilFlag from '../assets/imgs/brazil-flag.png'
 import EuaFlag from '../assets/imgs/eua-flag.png'
 import Flag from "./Flag"
+import { styled } from 'styled-components'
 
 const I18n = () => {
     const { i18n } = useTranslation()
@@ -13,9 +14,13 @@ const I18n = () => {
 
     const selectedLanguage = i18n.language
 
+    const I18nSection = styled.section `
+        display: grid;
+        gap: 5px;
+    `
 
     return (
-        <section className="flag-container">
+        <I18nSection className="flag-container">
             <Flag
                 image={BrazilFlag}
                 isSelected={selectedLanguage === 'pt-BR'}
@@ -26,7 +31,7 @@ const I18n = () => {
                 isSelected={selectedLanguage === 'en-US'}
                 onClick={() => handleChangeLanguage('en-US')}
             />
-        </section>
+        </I18nSection>
     )
 }
 

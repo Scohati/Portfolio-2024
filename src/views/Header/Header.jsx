@@ -10,6 +10,7 @@ import {
     NavLinks
 } from './styled.js'
 import { useTheme } from '../../contexts/ThemeContext.jsx'
+import Translator from '../../i18n/Translator.jsx'
 
 const Header = () => {
 
@@ -21,13 +22,23 @@ const Header = () => {
                 <Image src={theme === 'light' ? logo : logoDark} alt="Diogo Scohati's Logo" />
             </Div>
             <NavLinks theme={theme}>
-                <Link href="#home">Home</Link>
-                <Link href="#about">About</Link>
-                <Link href="#works">Works</Link>
-                <Link href="#contact">Contact</Link>
+                <Link href="#home">
+                    <Translator path="header.home" />
+                </Link>
+                <Link href="#about">
+                    <Translator path="header.about" />
+                </Link>
+                <Link href="#works">
+                    <Translator path="header.works" />
+                </Link>
+                <Link href="#contact">
+                    <Translator path="header.contact" />
+                </Link>
             </NavLinks>
             <Div>
-                <Button>Contact</Button>
+                <Button>
+                    <Translator path="header.contact" />
+                </Button>
             </Div>
         </FlexSection>
     )

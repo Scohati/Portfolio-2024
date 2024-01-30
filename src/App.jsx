@@ -9,10 +9,8 @@ import {
   MyServices,
   Works
 } from './views'
-import { ToggleTheme } from './components'
 import { ThemeProvider } from './contexts/ThemeContext'
-import I18n from './i18n/I18n'
-import Translator from './i18n/Translator'
+import Controls from './widgets/Controls'
 
 
 export function App() {
@@ -43,9 +41,7 @@ export function App() {
         <ChoosePlan />
       </AppSection>
 
-      <ToggleTheme />
-      <I18n />
-      <Translator path="home.message" />
+      <Controls />
     </ThemeProvider>
   )
 }

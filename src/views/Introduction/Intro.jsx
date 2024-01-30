@@ -10,10 +10,11 @@ import {
     P
 } from './styled.js'
 import { useTheme } from '../../contexts/ThemeContext.jsx'
+import Translator from '../../i18n/Translator.jsx'
 
 const Intro = () => {
 
-    const { theme } = useTheme()
+    const { theme } = useTheme() 
 
     return (
         <IntroSection>
@@ -23,15 +24,20 @@ const Intro = () => {
                 <H3 theme={theme}>SCOHATI</H3>
             </DivText>
             <DivText>
-                <H3Developer theme={theme}>SR DEVELOPER</H3Developer>
+                <H3Developer theme={theme}>
+                    <Translator path="intro.h3Dev" />
+                </H3Developer>
                 <div>
-                    <H6 theme={theme}>Front end developer <br /> based in Brazil</H6>
+                    <H6 theme={theme}>
+                        <Translator path="intro.h6" />
+                    </H6>
                 </div>
             </DivText>
-            <P theme={theme}>I’m a senior front end developer with 10 years of experience with 10+ successful 
-                <br />projects in my portfolio</P>
+                <P theme={theme}>
+                    <Translator path="intro.p" />
+                </P>
             <Button>
-                Message me
+                <Translator path="intro.btn" />
                 <img src={linkRIght} alt="Link image" />
             </Button>
         </IntroSection>
