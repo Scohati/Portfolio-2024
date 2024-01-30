@@ -6,7 +6,6 @@ import {
 import Typography from '../../components/Typography.jsx'
 import { useTheme } from '../../contexts/ThemeContext.jsx'
 
-
 const Companies = () => {
 
     const { theme } = useTheme()
